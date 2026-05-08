@@ -1,0 +1,33 @@
+{
+    "name": "REDCap Custom Query External Module",
+    "description": "Adds a custom field-level query icon to fields tagged with @CUSTOMQUERY and stores the thread in REDCap's native data resolution tables.",
+    "namespace": "OxfordVaccineGroup\\RedcapCustomQueryExternalModule",
+    "framework-version": 3,
+    "permissions": [
+        "redcap_data_entry_form"
+    ],
+    "authors": [
+        {
+            "name": "Mujtaba Ghulam Farooq",
+            "email": "mujtaba.farooq@paediatrics.ox.ac.uk",
+            "institution": "Oxford Vaccine Group"
+        },
+        {
+            "name": "Yama Farooq Mujadidi",
+            "email": "yama.farooq@paediatrics.ox.ac.uk",
+            "institution": "Oxford Vaccine Group"
+        }
+    ],
+    "enable-every-page-hooks-on-system-pages": false,
+    "enable-ajax-logging": true,
+    "project-settings": [
+        {
+            "key": "custom_query_roles_allowed",
+            "name": "Roles allowed to use custom query icons",
+            "required": false,
+            "type": "user-role-list",
+            "repeatable": true,
+            "field-type": "checkbox"
+        }
+    ]
+}
